@@ -1,0 +1,32 @@
+# Hugo generated files
+public/
+resources/
+hugo_stats.json
+
+# Tailwind CSS output (if applicable)
+assets/css/output.css
+
+# Temporary files and caches
+.DS_Store
+Thumbs.db
+*.log
+.cache/
+hugo_cache/
+
+# Node.js dependencies (if using Tailwind, PostCSS, etc.)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python virtual environment (if using any scripts)
+venv/
+__pycache__/
+
+# Editor & OS specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
