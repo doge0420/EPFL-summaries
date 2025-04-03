@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header/head.html" . }}
+
+  <body class="bg-white font-sans text-gray-900">
+
+  <div class="container mx-auto p-6">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+      <p class="mt-2 text-lg">{{ .Date.Format "January 2, 2006" }}</p>
+    </header>
+
+    <!-- Content -->
+    <div class="prose max-w-none">
+      {{ .Content }}
+    </div>
+
+    <!-- Categories Section -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-semibold">Categories</h2>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Documents Category -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Documents</h3>
+          <p class="mt-2">Explore reports, PDFs, and important documents.</p>
+          <a href="/documents/" class="mt-4 inline-block text-blue-500 hover:underline">Browse Documents</a>
+        </div>
+
+        <!-- Images Category -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Images</h3>
+          <p class="mt-2">Browse through various image files including photos and screenshots.</p>
+          <a href="/images/" class="mt-4 inline-block text-blue-500 hover:underline">Browse Images</a>
+        </div>
+
+        <!-- Videos Category -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Videos</h3>
+          <p class="mt-2">Watch videos related to various projects and tutorials.</p>
+          <a href="/videos/" class="mt-4 inline-block text-blue-500 hover:underline">Browse Videos</a>
+        </div>
+
+        <!-- Audio Category -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Audio</h3>
+          <p class="mt-2">Listen to podcasts, sound recordings, and more audio content.</p>
+          <a href="/audio/" class="mt-4 inline-block text-blue-500 hover:underline">Browse Audio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
