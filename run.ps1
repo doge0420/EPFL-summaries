@@ -1,5 +1,5 @@
 $tailwind = Start-Job -ScriptBlock {npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch --minify}
-$hugo = Start-Job -ScriptBlock {hugo server -D}
+$hugo = Start-Job -ScriptBlock {hugo server --disableFastRender -D}
 
 Write-Host 'Starting jobs...';
 

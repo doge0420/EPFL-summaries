@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+
+  <body class="bg-dark text-black">
+    <!-- Header -->
+    {{ partial "header.html" }}
+
+    <!-- Content -->
+    <div class="container mx-auto p-6">
+      <main>{{ block "content" . }}{{ end }}</main>
+    </div>
+
+    <!-- Footer -->
+    {{ partial "footer.html" }}
+  </body>
+</html>
