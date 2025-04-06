@@ -2,7 +2,6 @@
 public/
 resources/
 hugo_stats.json
-static
 
 # Tailwind CSS output (if applicable)
 assets/css/output.css
