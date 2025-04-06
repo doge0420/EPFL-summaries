@@ -5,9 +5,18 @@
 
 @theme {
   --default-font-family: "JetBrains Mono", "sans-serif";
-  --color-dark: #1e1e1e;
-  --color-red: #8E1616;
-  --color-lred: #D84040;
+  --default-mono-font-family: "JetBrains Mono", "sans-serif";
+  --color-dark: #0f0e1c;
+  --color-dark2: #1b1b2f;
+  --color-pink: #cd44b7;
+  --color-blue: #649fcd;
+  --color-yellow: #f5de5e;
+}
+
+@layer utilities {
+  .text-black {
+    color: var(--color-white);
+  }
 }
 
 /* jetbrains-mono-100 - latin */
