@@ -5,3 +5,5 @@ title: "EPFL lecture summaries"
 ---
 
 All credit goes to Ali EL-AZDI — I just built this little site to make his docs easier to browse and find.
+
+If anything is missing please let me know on telegram: **@ethan_hgwr**
